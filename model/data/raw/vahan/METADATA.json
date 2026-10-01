@@ -1,0 +1,33 @@
+{
+  "source": "Vahan 4.0 Public Dashboard (MoRTH)",
+  "original_filename": "vahan_ev_registrations_raw.csv",
+  "retrieval_date": "2026-09-20",
+  "source_url": "https://analytics.parivahan.gov.in/",
+  "geographic_scope": "India (Selected target RTOs across Noida, Delhi, Bengaluru, Mumbai, Pune, Hyderabad)",
+  "time_coverage": "2024-01-01 to 2024-12-31",
+  "row_count": 72,
+  "column_names": [
+    "state",
+    "district",
+    "rto_code",
+    "vehicle_category",
+    "fuel_type",
+    "year",
+    "month",
+    "ev_registrations"
+  ],
+  "missing_value_summary": {
+    "state": 0,
+    "district": 0,
+    "rto_code": 0,
+    "vehicle_category": 0,
+    "fuel_type": 0,
+    "year": 0,
+    "month": 0,
+    "ev_registrations": 0
+  },
+  "duplicate_summary": 0,
+  "classification": "REAL_OFFICIAL",
+  "data_scope_note": "Curated subset/sample used for EVsathi Phase 2 calibration across 6 target metro RTOs rather than full national registry.",
+  "notes": "Extracted from Vahan 4.0 monthly fuel category reports for Electric BOV 4-wheelers across key target RTO jurisdictions."
+}

@@ -1,0 +1,78 @@
+{
+  "target": "demand_value",
+  "features_count": 22,
+  "features": [
+    "hour",
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "is_holiday",
+    "sin_hour",
+    "cos_hour",
+    "sin_day",
+    "cos_day",
+    "latitude",
+    "longitude",
+    "ev_density",
+    "nearby_charger_count_2km",
+    "nearby_charger_count_5km",
+    "ev_to_charger_ratio",
+    "charger_power_kw",
+    "is_fast_charger",
+    "electricity_tariff",
+    "peak_tariff_indicator",
+    "lag_1h",
+    "lag_24h",
+    "rolling_3h_mean"
+  ],
+  "feature_categories": {
+    "temporal": [
+      "hour",
+      "day_of_week",
+      "month",
+      "is_weekend",
+      "is_holiday",
+      "sin_hour",
+      "cos_hour",
+      "sin_day",
+      "cos_day"
+    ],
+    "spatial": [
+      "latitude",
+      "longitude",
+      "ev_density",
+      "nearby_charger_count_2km",
+      "nearby_charger_count_5km",
+      "ev_to_charger_ratio"
+    ],
+    "station_hardware": [
+      "charger_power_kw",
+      "is_fast_charger"
+    ],
+    "economic_context": [
+      "electricity_tariff",
+      "peak_tariff_indicator"
+    ],
+    "historical_lags": [
+      "lag_1h",
+      "lag_24h",
+      "rolling_3h_mean"
+    ]
+  },
+  "forbidden_features_excluded": [
+    "demand_value",
+    "utilization",
+    "active_bookings",
+    "completed_sessions",
+    "energy_consumed_kwh"
+  ],
+  "metadata_identifiers_excluded": [
+    "charger_id",
+    "timestamp",
+    "state",
+    "city",
+    "charger_type",
+    "connector_type"
+  ],
+  "categorical_handling_decision": "Excluded 'state', 'city', 'charger_type', and 'connector_type' from direct model inputs. Their predictive information is fully and cleanly captured by continuous/binary physical features (latitude, longitude, ev_density, electricity_tariff, charger_power_kw, is_fast_charger), avoiding high-cardinality one-hot explosion and arbitrary ordinality."
+}

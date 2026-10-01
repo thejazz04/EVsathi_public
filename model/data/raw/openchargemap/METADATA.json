@@ -1,0 +1,37 @@
+{
+  "source": "Open Charge Map (OCM) Public Registry",
+  "original_filename": "ocm_india_pois_raw.csv",
+  "retrieval_date": "2026-09-20",
+  "source_url": "https://api.openchargemap.io/v3/poi/?countrycode=IN",
+  "geographic_scope": "India (NCR, Bengaluru, Mumbai, Pune, Hyderabad)",
+  "time_coverage": "2022-2026 Community Submissions",
+  "row_count": 8,
+  "column_names": [
+    "ocm_id",
+    "title",
+    "town",
+    "state_or_province",
+    "latitude",
+    "longitude",
+    "power_kw",
+    "connection_type",
+    "quantity",
+    "usage_type"
+  ],
+  "missing_value_summary": {
+    "ocm_id": 0,
+    "title": 0,
+    "town": 0,
+    "state_or_province": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "power_kw": 0,
+    "connection_type": 0,
+    "quantity": 0,
+    "usage_type": 0
+  },
+  "duplicate_summary": 0,
+  "classification": "REAL_THIRD_PARTY",
+  "data_scope_note": "Target city subset/sample retrieved via OpenChargeMap REST API filtered by countrycode=IN for calibration of urban competition radius.",
+  "notes": "Verified POI entries retrieved from OpenChargeMap REST API filtered by countrycode=IN."
+}

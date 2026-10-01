@@ -1,0 +1,73 @@
+{
+  "audit_phase": "Phase 7B",
+  "audit_date": "2026-09-22",
+  "status": "AUDIT_COMPLETE_READ_ONLY",
+  "model_contract": {
+    "model_artifact": "model/models/xgboost_demand_v1.json",
+    "feature_config": "model/training/feature_config.json",
+    "features_count": 22,
+    "target": "demand_value",
+    "target_bounds": [
+      0.05,
+      0.98
+    ]
+  },
+  "dataset_inspected": {
+    "path": "model/data/real/india_calibrated/india_calibrated_hourly_demand.csv",
+    "total_rows": 256937,
+    "unique_chargers": 2118,
+    "time_span": "2021-09-30 17:00:00 to 2022-09-30 23:00:00",
+    "panel_type": "transaction_active_sparse_panel"
+  },
+  "target_compatibility": {
+    "hourly_energy_kwh": "NOT_COMPARABLE",
+    "hourly_sessions_count": "NOT_COMPARABLE",
+    "occupied_minutes": "NOT_COMPARABLE",
+    "demand_index": "NOT_COMPARABLE",
+    "accuracy_metrics_computed": false,
+    "metric_policy_statement": "Existing-model inference was completed, but quantitative predictive accuracy against the real-world target was not computed because the Phase 3 synthetic demand_value target is not directly comparable to the available physical charging targets."
+  },
+  "demand_index_audit": {
+    "active_connectors_semantics": "inferred_concurrent_transactions",
+    "installed_connectors_available": false,
+    "denominator_property": "circular_dynamic_normalization",
+    "saturation_at_1_0_pct": 50.14,
+    "scientific_designation": "occupancy_derived_activity_index"
+  },
+  "panel_and_leakage_audit": {
+    "panel_completeness_pct": 1.38,
+    "gap_gt_1h_pct": 24.99,
+    "exact_active_lags_present_pct": 8.64,
+    "anti_leakage_verified": true
+  },
+  "feature_compatibility_counts": {
+    "available_real": 1,
+    "available_derived": 9,
+    "available_with_assumption": 12,
+    "not_comparable": 0,
+    "unavailable": 0
+  },
+  "domain_shift_summary": {
+    "charger_power_shift": "DOMAIN_SHIFT_OBSERVED (91.1% 7kW AC vs 40% fast DC)",
+    "temporal_charging_shift": "MODERATE_SHIFT (daytime concentration, median 15:00 vs 11:00)",
+    "ev_density_scale_shift": "CRITICAL_SCALE_MISMATCH (physical 28.5 EVs/km2 vs synthetic 0.78 factor)",
+    "tariff_shift": "DOMAIN_SHIFT_OBSERVED (37.8% peak charging vs 18.3%)"
+  },
+  "inference_summary": {
+    "total_attempted": 256937,
+    "accepted_active_history": 22196,
+    "rejected_missing_history": 234741,
+    "prediction_mean": 0.7337,
+    "prediction_median": 0.7789,
+    "prediction_min": 0.1523,
+    "prediction_max": 0.98,
+    "min_bound_saturation_pct": 0.0,
+    "max_bound_saturation_pct": 0.02
+  },
+  "formal_verdicts": {
+    "phase3_v1_evaluation_verdict": "NO-GO",
+    "phase3_v1_verdict_rationale": "Phase 3 XGBoost v1 cannot be evaluated quantitatively against real observational data due to target incompatibility, scale mismatch, and covariate domain shift.",
+    "phase8_retraining_readiness": "GO",
+    "phase8_retraining_rationale": "Phase 7A dataset (256,937 records, 2,118 chargers) provides statistically robust, verified observational telemetry suitable for training a new Phase 8 model on physical targets."
+  }
+}

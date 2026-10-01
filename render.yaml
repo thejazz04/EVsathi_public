@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: evsathi-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: CLIENT_ORIGIN
+        value: https://evsathi.onrender.com
+    healthCheckPath: /api/health
+
+  - type: web
+    name: evsathi-frontend
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: ./client/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://evsathi-backend.onrender.com/api

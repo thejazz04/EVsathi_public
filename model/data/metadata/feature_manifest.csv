@@ -1,0 +1,34 @@
+feature_name,feature_role,data_classification,availability_at_forecast_time,allowed_as_model_input,source,description,leakage_risk
+charger_id,METADATA_IDENTIFIER,NODE_DEPENDENT,YES,NO,EVsathi Node Registry,Unique station identifier string for entity grouping,NONE
+timestamp,METADATA_TEMPORAL,REAL,YES,NO,Calendar Time-Series,Hourly timestamp of observation,NONE
+latitude,MODEL_PREDICTOR,NODE_DEPENDENT,YES,YES,BEE EV Yatra / OCM Registry,Station latitude coordinate,LOW
+longitude,MODEL_PREDICTOR,NODE_DEPENDENT,YES,YES,BEE EV Yatra / OCM Registry,Station longitude coordinate,LOW
+state,MODEL_PREDICTOR,REAL,YES,YES,Official State Jurisdiction,Administrative state region,LOW
+city,MODEL_PREDICTOR,REAL,YES,YES,Municipal Registry,Target metropolitan urban cluster,LOW
+hour,MODEL_PREDICTOR,REAL,YES,YES,Calendar Time Index,Hour of day (0 to 23),LOW
+day_of_week,MODEL_PREDICTOR,REAL,YES,YES,Calendar Time Index,Day of week (0 to 6),LOW
+month,MODEL_PREDICTOR,REAL,YES,YES,Calendar Time Index,Month of year (1 to 12),LOW
+is_weekend,MODEL_PREDICTOR,DERIVED,YES,YES,Calendar Time Index,Weekend indicator flag (0 or 1),LOW
+is_holiday,MODEL_PREDICTOR,DERIVED,YES,YES,DoPT Gazetted Calendar,Gazetted national/commercial holiday indicator,LOW
+sin_hour,MODEL_PREDICTOR,DERIVED,YES,YES,Angular Feature Transform,Cyclical sine transform of hour (sin(2*pi*h/24)),LOW
+cos_hour,MODEL_PREDICTOR,DERIVED,YES,YES,Angular Feature Transform,Cyclical cosine transform of hour (cos(2*pi*h/24)),LOW
+sin_day,MODEL_PREDICTOR,DERIVED,YES,YES,Angular Feature Transform,Cyclical sine transform of day (sin(2*pi*d/7)),LOW
+cos_day,MODEL_PREDICTOR,DERIVED,YES,YES,Angular Feature Transform,Cyclical cosine transform of day (cos(2*pi*d/7)),LOW
+charger_power_kw,MODEL_PREDICTOR,NODE_DEPENDENT,YES,YES,Hardware Specification,Hardware power capacity rating in kW,LOW
+charger_type,MODEL_PREDICTOR,NODE_DEPENDENT,YES,YES,Hardware Specification,Standard hardware classification (Level 2 or Fast DC),LOW
+connector_type,MODEL_PREDICTOR,NODE_DEPENDENT,YES,YES,Hardware Specification,Standard interface port type (Type 2 or CCS2),LOW
+is_fast_charger,MODEL_PREDICTOR,NODE_DEPENDENT,YES,YES,Hardware Threshold,Binary flag indicating power capacity >= 30 kW,LOW
+ev_density,MODEL_PREDICTOR,DERIVED,YES,YES,Vahan 4.0 Registration Portal,Normalized annual district 4W EV registration scale,LOW
+nearby_charger_count_2km,MODEL_PREDICTOR,DERIVED,YES,YES,BEE / OCM Haversine Calculation,Count of competitor public charging stations within 2.0 km,LOW
+nearby_charger_count_5km,MODEL_PREDICTOR,DERIVED,YES,YES,BEE / OCM Haversine Calculation,Count of competitor public charging stations within 5.0 km,LOW
+ev_to_charger_ratio,MODEL_PREDICTOR,DERIVED,YES,YES,Vahan & BEE Registries,Ratio of registered district EVs to public charging connectors,LOW
+electricity_tariff,MODEL_PREDICTOR,REAL,YES,YES,CEA / SERC Tariff Orders,Official state base electricity tariff (INR per kWh),LOW
+peak_tariff_indicator,MODEL_PREDICTOR,DERIVED,YES,YES,State ToD Tariff Orders,Binary flag indicating active Time-of-Day peak surcharge window,LOW
+lag_1h,MODEL_PREDICTOR,DERIVED_FROM_SYNTHETIC,YES,YES,Past Hourly Demand,Demand value at t-1 hour strictly from past observation,LOW
+lag_24h,MODEL_PREDICTOR,DERIVED_FROM_SYNTHETIC,YES,YES,Past Hourly Demand,Demand value at t-24 hours strictly from past observation,LOW
+rolling_3h_mean,MODEL_PREDICTOR,DERIVED_FROM_SYNTHETIC,YES,YES,Past Hourly Demand,Mean demand over past 3 hours [t-3 to t-1] strictly from past,LOW
+utilization,SIMULATED_OPERATIONAL,SYNTHETIC,NO_AT_FORECAST_TIME,NO,Micro-Simulation Model,Simulated concurrent station utilization fraction (0.0 to 1.0),CRITICAL_TARGET_LEAKAGE
+active_bookings,SIMULATED_OPERATIONAL,SYNTHETIC,NO_AT_FORECAST_TIME,NO,Micro-Simulation Model,Simulated count of active driver slot reservations in interval,CRITICAL_TARGET_LEAKAGE
+completed_sessions,SIMULATED_OPERATIONAL,SYNTHETIC,NO_AT_FORECAST_TIME,NO,Micro-Simulation Model,Simulated count of completed vehicle charges in interval,CRITICAL_TARGET_LEAKAGE
+energy_consumed_kwh,SIMULATED_OPERATIONAL,SYNTHETIC,NO_AT_FORECAST_TIME,NO,Micro-Simulation Model,Simulated total energy delivered in kWh,CRITICAL_TARGET_LEAKAGE
+demand_value,FORECAST_TARGET,SYNTHETIC,NO_AT_FORECAST_TIME,NO,Calibrated Synthetic Model,Supervised continuous demand prediction target y in [0.05 0.98],TARGET_VARIABLE

@@ -1,0 +1,27 @@
+{
+  "source": "Ministry of Personnel, Public Grievances and Pensions (DoPT), Government of India",
+  "original_filename": "india_gazetted_holidays_raw.csv",
+  "retrieval_date": "2026-09-20",
+  "source_url": "https://dopt.gov.in/",
+  "geographic_scope": "Pan-India",
+  "time_coverage": "Calendar Year 2024",
+  "row_count": 18,
+  "column_names": [
+    "date",
+    "holiday_name",
+    "holiday_type",
+    "state",
+    "is_national_holiday"
+  ],
+  "missing_value_summary": {
+    "date": 0,
+    "holiday_name": 0,
+    "holiday_type": 0,
+    "state": 0,
+    "is_national_holiday": 0
+  },
+  "duplicate_summary": 0,
+  "classification": "REAL_OFFICIAL",
+  "data_scope_note": "Complete official gazetted holiday calendar for Central Government administrative and commercial offices in 2024.",
+  "notes": "Compulsory gazetted holidays for central government and national commercial establishments across India."
+}

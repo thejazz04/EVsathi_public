@@ -1,0 +1,73 @@
+state,district,rto_code,vehicle_category,fuel_type,year,month,ev_registrations
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,1,412
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,2,438
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,3,520
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,4,485
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,5,510
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,6,545
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,7,590
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,8,625
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,9,670
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,10,780
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,11,815
+Uttar Pradesh,Gautam Buddha Nagar,UP16,4W,ELECTRIC(BOV),2024,12,860
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,1,650
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,2,690
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,3,810
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,4,760
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,5,830
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,6,890
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,7,940
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,8,980
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,9,1050
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,10,1230
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,11,1290
+Delhi,New Delhi,DL01,4W,ELECTRIC(BOV),2024,12,1360
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,1,820
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,2,875
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,3,990
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,4,940
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,5,1020
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,6,1090
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,7,1160
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,8,1210
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,9,1320
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,10,1540
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,11,1610
+Karnataka,Bengaluru Urban,KA01,4W,ELECTRIC(BOV),2024,12,1720
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,1,710
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,2,760
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,3,890
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,4,840
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,5,910
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,6,980
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,7,1040
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,8,1090
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,9,1180
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,10,1360
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,11,1420
+Maharashtra,Mumbai Suburban,MH02,4W,ELECTRIC(BOV),2024,12,1510
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,1,580
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,2,615
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,3,710
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,4,680
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,5,730
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,6,790
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,7,840
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,8,890
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,9,960
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,10,1110
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,11,1170
+Maharashtra,Pune,MH12,4W,ELECTRIC(BOV),2024,12,1250
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,1,520
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,2,550
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,3,630
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,4,600
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,5,650
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,6,710
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,7,750
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,8,800
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,9,870
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,10,990
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,11,1040
+Telangana,Hyderabad,TS09,4W,ELECTRIC(BOV),2024,12,1120

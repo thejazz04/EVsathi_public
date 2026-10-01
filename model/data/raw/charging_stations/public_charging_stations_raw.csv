@@ -1,0 +1,13 @@
+station_id,source,name,state,city,latitude,longitude,charger_type,connector_type,power_kw,operator
+STN-IN-001,BEE_EV_YATRA,EESL Charging Station Sector 62,Uttar Pradesh,Noida,28.6280,77.3685,Level 2,Type 2,7.4,EESL
+STN-IN-002,BEE_EV_YATRA,Statiq Charging Hub Sector 18,Uttar Pradesh,Noida,28.5708,77.3261,Fast DC,CCS2,60.0,Statiq
+STN-IN-003,DATA_GOV_IN,BSES Rajdhani EV Station Connaught Place,Delhi,New Delhi,28.6315,77.2167,Fast DC,CCS2,50.0,BSES
+STN-IN-004,DATA_GOV_IN,Tata Power DDL EV Station Rohini,Delhi,New Delhi,28.7150,77.1150,Level 2,Type 2,22.0,Tata Power
+STN-IN-005,BEE_EV_YATRA,BESCOM Fast Charging Hub MG Road,Karnataka,Bengaluru,12.9750,77.6080,Fast DC,CCS2,60.0,BESCOM
+STN-IN-006,BEE_EV_YATRA,Zeon Charging Station Electronic City,Karnataka,Bengaluru,12.8452,77.6602,Level 2,Type 2,22.0,Zeon Charging
+STN-IN-007,DATA_GOV_IN,Adani Total Gas EV Hub BKC,Maharashtra,Mumbai,19.0650,77.8750,Fast DC,CCS2,120.0,Adani Total
+STN-IN-008,BEE_EV_YATRA,Tata Power Fast Charger Andheri East,Maharashtra,Mumbai,19.1136,72.8697,Fast DC,CCS2,50.0,Tata Power
+STN-IN-009,BEE_EV_YATRA,ChargeZone Station Shivajinagar,Maharashtra,Pune,18.5314,73.8446,Level 2,Type 2,22.0,ChargeZone
+STN-IN-010,BEE_EV_YATRA,Fortum Charge & Drive Hitec City,Telangana,Hyderabad,17.4435,78.3772,Fast DC,CCS2,60.0,Fortum
+STN-IN-011,DATA_GOV_IN,IOCL EV Station Gachibowli,Telangana,Hyderabad,17.4399,78.3489,Level 2,Type 2,7.4,IOCL
+STN-IN-012,BEE_EV_YATRA,Kazam EV Charger Indiranagar,Karnataka,Bengaluru,12.9784,77.6408,Level 2,Type 2,7.4,Kazam

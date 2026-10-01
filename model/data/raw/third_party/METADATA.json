@@ -1,0 +1,31 @@
+{
+  "source": "Kaggle Third-Party Compilations (Saket Pradhan / Geeta004)",
+  "original_filename": "kaggle_ev_stations_india_raw.csv",
+  "retrieval_date": "2026-09-20",
+  "source_url": "https://www.kaggle.com/datasets/saketpradhan/electric-vehicle-charging-stations-in-india",
+  "geographic_scope": "India (NCR, Bengaluru, Mumbai, Pune, Hyderabad)",
+  "time_coverage": "Static Compilation 2021-2024",
+  "row_count": 7,
+  "column_names": [
+    "name",
+    "state",
+    "city",
+    "address",
+    "latitude",
+    "longitude",
+    "type"
+  ],
+  "missing_value_summary": {
+    "name": 0,
+    "state": 0,
+    "city": 0,
+    "address": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "type": 0
+  },
+  "duplicate_summary": 0,
+  "classification": "REAL_THIRD_PARTY",
+  "data_scope_note": "Sample subset from Kaggle used strictly for geographic comparison and exploratory validation.",
+  "notes": "Static crowdsourced and scraped station POIs used strictly for spatial validation and EDA."
+}

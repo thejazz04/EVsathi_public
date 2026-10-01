@@ -1,0 +1,9 @@
+ocm_id,title,town,state_or_province,latitude,longitude,power_kw,connection_type,quantity,usage_type
+OCM-IN-101,Ather Grid Charging Point Indiranagar,Bengaluru,Karnataka,12.9719,77.6412,3.3,Type 2 AC,2,Public
+OCM-IN-102,Tata Power Fast Charger Cyber City,Gurugram,Haryana,28.4950,77.0890,50.0,CCS2,2,Public
+OCM-IN-103,Jio-bp pulse Charging Station Bandra Kurla,Mumbai,Maharashtra,19.0600,72.8650,60.0,CCS2,4,Public
+OCM-IN-104,Statiq EV Station Connaught Place,New Delhi,Delhi,28.6320,77.2190,22.0,Type 2 AC,2,Public
+OCM-IN-105,Fortum Charge Point Sector 62,Noida,Uttar Pradesh,28.6250,77.3710,60.0,CCS2,2,Public
+OCM-IN-106,ChargeZone Express Way Hub,Pune,Maharashtra,18.5700,73.7800,50.0,CCS2,2,Public
+OCM-IN-107,Relux Electric Charging Station Gachibowli,Hyderabad,Telangana,17.4410,78.3520,60.0,CCS2,4,Public
+OCM-IN-108,Magenta ChargeGrid Whitefield,Bengaluru,Karnataka,12.9698,77.7500,7.4,Type 2 AC,2,Public

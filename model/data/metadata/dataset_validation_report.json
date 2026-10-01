@@ -1,0 +1,126 @@
+{
+  "dataset": "evsathi_demand_hourly.csv",
+  "validation_timestamp": "2026-10-01T12:42:23.777284",
+  "total_tests": 18,
+  "passed_tests": 18,
+  "failed_tests": 0,
+  "all_passed": true,
+  "test_results": {
+    "1_row_count": {
+      "test": "Exact Target Row Count (87,600)",
+      "passed": true,
+      "expected": 87600,
+      "actual": 87600
+    },
+    "2_column_presence": {
+      "test": "Expected Column Schema Completeness (33 Cols)",
+      "passed": true,
+      "missing_columns": [],
+      "total_columns": 33
+    },
+    "3_missing_values": {
+      "test": "Zero Missing / Null Values Across Dataset",
+      "passed": true,
+      "total_null_cells": 0
+    },
+    "4_duplicate_rows": {
+      "test": "Zero Duplicate Rows",
+      "passed": true,
+      "duplicate_rows": 0
+    },
+    "5_duplicate_keys": {
+      "test": "Unique Charger-Timestamp Primary Keys",
+      "passed": true,
+      "duplicate_keys": 0
+    },
+    "6_timestamp_continuity": {
+      "test": "Strict 1-Hour Step Continuity per Station",
+      "passed": true,
+      "failed_chargers": []
+    },
+    "7_demand_range": {
+      "test": "Demand Target Bounded in [0.05, 0.98]",
+      "passed": true,
+      "min_demand": 0.05,
+      "max_demand": 0.98
+    },
+    "8_utilization_range": {
+      "test": "Utilization Bounded in [0.0, 1.0]",
+      "passed": true,
+      "min_utilization": 0.0,
+      "max_utilization": 0.9963
+    },
+    "9_energy_bounds": {
+      "test": "Energy Consumed Physically Bounded (<= power_kw * 1h)",
+      "passed": true,
+      "negative_values": 0,
+      "overdraw_values": 0
+    },
+    "10_impossible_combinations": {
+      "test": "Zero Impossible Operational States (Zero Util => Zero Activity)",
+      "passed": true,
+      "impossible_records": 0
+    },
+    "11_lag_correctness": {
+      "test": "Historical Lag Accuracy (t-1 and t-24)",
+      "passed": true,
+      "sample_lag_discrepancies": 0
+    },
+    "12_rolling_feature_correctness": {
+      "test": "Rolling 3h Mean Excludes Current Target (Strictly t-3 to t-1)",
+      "passed": true,
+      "sample_rolling_discrepancies": 0
+    },
+    "13_cross_charger_leakage": {
+      "test": "Zero Cross-Charger Information Leakage",
+      "passed": true,
+      "cross_charger_leaks": 0
+    },
+    "14_target_leakage_policy": {
+      "test": "Forbidden Same-Time Operational Variables Excluded from Model Manifest",
+      "passed": true,
+      "manifest_exists": true,
+      "forbidden_in_model_inputs": []
+    },
+    "15_operational_correlation_audit": {
+      "test": "Operational Simulation Correlation Audit (Confirmed Excluded)",
+      "passed": true,
+      "corr_utilization_demand": 0.9982,
+      "corr_bookings_demand": 0.7727,
+      "corr_sessions_demand": 0.7189,
+      "corr_energy_demand": 0.5241,
+      "status": "High correlation expected in simulation; confirmed excluded from model inputs"
+    },
+    "16_reference_data_grounding": {
+      "test": "Strengthened Reference Grounding (EV Density, Tariffs, Power, Coordinates, Nearby Counts)",
+      "passed": true,
+      "density_discrepancies": 0,
+      "tariff_discrepancies": 0,
+      "power_discrepancies": 0,
+      "coordinate_discrepancies": 0,
+      "nearby_count_discrepancies": 0,
+      "audited_stations": 10,
+      "notes": "Independently verified against ev_registrations.csv, electricity_context.csv, station_calibration_mapping.csv, and charger_locations.csv"
+    },
+    "17_diurnal_profile_sanity": {
+      "test": "Diurnal Commute Profile (Morning & Evening Peaks > Night Off-Peak)",
+      "passed": true,
+      "morning_mean": 0.774,
+      "evening_mean": 0.847,
+      "night_mean": 0.1633
+    },
+    "18_station_representation": {
+      "test": "10 Stations * 8,760 Hours Balanced Across 6 Hubs",
+      "passed": true,
+      "total_stations": 10,
+      "cities": [
+        "Noida",
+        "New Delhi",
+        "Bengaluru",
+        "Mumbai",
+        "Pune",
+        "Hyderabad"
+      ]
+    }
+  }
+}

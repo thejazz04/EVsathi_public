@@ -1,0 +1,19 @@
+date,holiday_name,holiday_type,state,is_national_holiday
+2024-01-26,Republic Day,Gazetted Holiday,All India,True
+2024-03-08,Maha Shivratri,Gazetted Holiday,All India,False
+2024-03-25,Holi,Gazetted Holiday,All India,False
+2024-03-29,Good Friday,Gazetted Holiday,All India,False
+2024-04-11,Eid-ul-Fitr,Gazetted Holiday,All India,False
+2024-04-17,Ram Navami,Gazetted Holiday,All India,False
+2024-04-21,Mahavir Jayanti,Gazetted Holiday,All India,False
+2024-05-23,Buddha Purnima,Gazetted Holiday,All India,False
+2024-06-17,Id-ul-Zuha (Bakrid),Gazetted Holiday,All India,False
+2024-07-17,Muharram,Gazetted Holiday,All India,False
+2024-08-15,Independence Day,Gazetted Holiday,All India,True
+2024-08-26,Janmashtami,Gazetted Holiday,All India,False
+2024-09-16,Milad-un-Nabi,Gazetted Holiday,All India,False
+2024-10-02,Mahatma Gandhi Birthday,Gazetted Holiday,All India,True
+2024-10-12,Dussehra,Gazetted Holiday,All India,False
+2024-10-31,Diwali (Deepavali),Gazetted Holiday,All India,False
+2024-11-15,Guru Nanak Birthday,Gazetted Holiday,All India,False
+2024-12-25,Christmas Day,Gazetted Holiday,All India,False

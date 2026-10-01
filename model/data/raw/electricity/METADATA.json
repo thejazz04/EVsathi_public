@@ -1,0 +1,37 @@
+{
+  "source": "Central Electricity Authority (CEA) / State Electricity Regulatory Commissions (UPERC, DERC, KERC, MERC, TSERC)",
+  "original_filename": "cea_ev_tariffs_raw.csv",
+  "retrieval_date": "2026-09-20",
+  "source_url": "https://cea.nic.in/",
+  "geographic_scope": "India (UP, Delhi, Karnataka, Maharashtra, Telangana)",
+  "time_coverage": "Financial Year 2024-2025 Tariff Schedules",
+  "row_count": 5,
+  "column_names": [
+    "state",
+    "discom",
+    "consumer_category",
+    "base_tariff_inr_kwh",
+    "fixed_charge_inr_kw_month",
+    "tod_peak_surcharge_percent",
+    "peak_hours",
+    "off_peak_hours",
+    "source",
+    "effective_date"
+  ],
+  "missing_value_summary": {
+    "state": 0,
+    "discom": 0,
+    "consumer_category": 0,
+    "base_tariff_inr_kwh": 0,
+    "fixed_charge_inr_kw_month": 0,
+    "tod_peak_surcharge_percent": 0,
+    "peak_hours": 0,
+    "off_peak_hours": 0,
+    "source": 0,
+    "effective_date": 0
+  },
+  "duplicate_summary": 0,
+  "classification": "REAL_OFFICIAL",
+  "data_scope_note": "Target state subset used for EVsathi Phase 2 calibration representing official SERC tariff orders for EV charging categories.",
+  "notes": "Official SERC/CEA benchmark EV charging tariffs per kWh, fixed monthly charges, and Time-of-Day surcharge percentages."
+}

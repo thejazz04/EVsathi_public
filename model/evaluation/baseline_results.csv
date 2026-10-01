@@ -1,0 +1,5 @@
+baseline_model,split,samples,mae,rmse,r2
+24-Hour Persistence Forecaster (lag_24h),Validation,13140,0.0741,0.1137,0.8139
+24-Hour Persistence Forecaster (lag_24h),Test,13140,0.0711,0.1105,0.8211
+Deterministic Diurnal Heuristic,Validation,13140,0.0824,0.097,0.8646
+Deterministic Diurnal Heuristic,Test,13140,0.0798,0.0948,0.8684

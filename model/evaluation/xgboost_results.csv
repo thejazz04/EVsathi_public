@@ -1,0 +1,4 @@
+model,split,samples,mae,rmse,r2
+XGBRegressor,Train,61320,0.0309,0.0389,0.9786
+XGBRegressor,Validation,13140,0.0424,0.0524,0.9605
+XGBRegressor,Test,13140,0.041,0.0509,0.9621

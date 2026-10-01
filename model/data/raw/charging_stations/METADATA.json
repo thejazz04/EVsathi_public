@@ -1,0 +1,40 @@
+{
+  "source": "BEE EV Yatra Portal & Open Government Data Platform India (data.gov.in)",
+  "original_filename": "public_charging_stations_raw.csv",
+  "retrieval_date": "2026-09-20",
+  "source_url": "https://evyatra.beeindia.gov.in/ and https://data.gov.in/",
+  "geographic_scope": "India (Target urban nodes across Noida, Delhi, Bengaluru, Mumbai, Pune, Hyderabad)",
+  "time_coverage": "2023-2026 Active Operational Stations",
+  "row_count": 12,
+  "column_names": [
+    "station_id",
+    "source",
+    "name",
+    "state",
+    "city",
+    "latitude",
+    "longitude",
+    "charger_type",
+    "connector_type",
+    "power_kw",
+    "operator"
+  ],
+  "missing_value_summary": {
+    "station_id": 0,
+    "source": 0,
+    "name": 0,
+    "state": 0,
+    "city": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "charger_type": 0,
+    "connector_type": 0,
+    "power_kw": 0,
+    "operator": 0
+  },
+  "duplicate_summary": 0,
+  "classification": "REAL_OFFICIAL",
+  "data_scope_note": "Curated subset/sample used for EVsathi Phase 2 calibration representing verified public CPO stations in key operating clusters.",
+  "coordinate_correction_note": "Station STN-IN-007 (Adani Total Gas EV Hub BKC, Mumbai) records raw longitude 77.8750 in data.gov.in source. Geographic verification confirms Bandra Kurla Complex is situated at 19.0650 N, 72.8750 E. The raw value 77.8750 is preserved in this raw artifact for provenance integrity, but corrected to 72.8750 during ingestion/preprocessing in model/scripts/preprocess_data.py.",
+  "notes": "Verified public charging station records with real geolocations, hardware specs, and charge point operators."
+}

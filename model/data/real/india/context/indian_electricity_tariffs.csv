@@ -1,0 +1,6 @@
+state,consumer_category,tariff_per_kwh,fixed_charge,peak_period,off_peak_period,source,effective_date
+Uttar Pradesh,Public/P2P EV Charging,7.7,0.0,17:00-22:00,23:00-06:00,UPERC Tariff Order / CEA,2024-04-01
+Delhi,EV Charging (LT/HT),6.0,0.0,16:00-21:00,22:00-06:00,DERC Tariff Order / CEA,2024-04-01
+Karnataka,Electric Vehicle Charging,6.5,50.0,18:00-22:00,22:00-06:00,KERC Tariff Order / CEA,2024-04-01
+Maharashtra,EV Charging Station,7.2,75.0,18:00-22:00,22:00-06:00,MERC Tariff Order / CEA,2024-04-01
+Telangana,Electric Vehicle Charging,6.0,0.0,18:00-22:00,22:00-06:00,TSERC Tariff Order / CEA,2024-04-01

@@ -1,0 +1,37 @@
+station_id,source,name,state,city,latitude,longitude,charger_type,connector_type,power_kw,operator
+STN-IN-001,BEE_EV_YATRA,EESL Charging Station Sector 62,Uttar Pradesh,Noida,28.628,77.3685,Level 2,Type 2,7.4,EESL
+STN-IN-002,BEE_EV_YATRA,Statiq Charging Hub Sector 18,Uttar Pradesh,Noida,28.5708,77.3261,Fast DC,CCS2,60.0,Statiq
+STN-IN-003,DATA_GOV_IN,BSES Rajdhani EV Station Connaught Place,Delhi,New Delhi,28.6315,77.2167,Fast DC,CCS2,50.0,BSES
+STN-IN-004,DATA_GOV_IN,Tata Power DDL EV Station Rohini,Delhi,New Delhi,28.715,77.115,Level 2,Type 2,22.0,Tata Power
+STN-IN-005,BEE_EV_YATRA,BESCOM Fast Charging Hub MG Road,Karnataka,Bengaluru,12.975,77.608,Fast DC,CCS2,60.0,BESCOM
+STN-IN-006,BEE_EV_YATRA,Zeon Charging Station Electronic City,Karnataka,Bengaluru,12.8452,77.6602,Level 2,Type 2,22.0,Zeon Charging
+STN-IN-007,DATA_GOV_IN,Adani Total Gas EV Hub BKC,Maharashtra,Mumbai,19.065,72.875,Fast DC,CCS2,120.0,Adani Total
+STN-IN-008,BEE_EV_YATRA,Tata Power Fast Charger Andheri East,Maharashtra,Mumbai,19.1136,72.8697,Fast DC,CCS2,50.0,Tata Power
+STN-IN-009,BEE_EV_YATRA,ChargeZone Station Shivajinagar,Maharashtra,Pune,18.5314,73.8446,Level 2,Type 2,22.0,ChargeZone
+STN-IN-010,BEE_EV_YATRA,Fortum Charge & Drive Hitec City,Telangana,Hyderabad,17.4435,78.3772,Fast DC,CCS2,60.0,Fortum
+STN-IN-011,DATA_GOV_IN,IOCL EV Station Gachibowli,Telangana,Hyderabad,17.4399,78.3489,Level 2,Type 2,7.4,IOCL
+STN-IN-012,BEE_EV_YATRA,Kazam EV Charger Indiranagar,Karnataka,Bengaluru,12.9784,77.6408,Level 2,Type 2,7.4,Kazam
+OCM-IN-101,OPEN_CHARGE_MAP,Ather Grid Charging Point Indiranagar,Karnataka,Bengaluru,12.9719,77.6412,Level 2,Type 2,3.3,Independent / CPO
+OCM-IN-102,OPEN_CHARGE_MAP,Tata Power Fast Charger Cyber City,Haryana,Gurugram,28.495,77.089,Fast DC,CCS2,50.0,Independent / CPO
+OCM-IN-103,OPEN_CHARGE_MAP,Jio-bp pulse Charging Station Bandra Kurla,Maharashtra,Mumbai,19.06,72.865,Fast DC,CCS2,60.0,Independent / CPO
+OCM-IN-104,OPEN_CHARGE_MAP,Statiq EV Station Connaught Place,Delhi,New Delhi,28.632,77.219,Level 2,Type 2,22.0,Independent / CPO
+OCM-IN-105,OPEN_CHARGE_MAP,Fortum Charge Point Sector 62,Uttar Pradesh,Noida,28.625,77.371,Fast DC,CCS2,60.0,Independent / CPO
+OCM-IN-106,OPEN_CHARGE_MAP,ChargeZone Express Way Hub,Maharashtra,Pune,18.57,73.78,Fast DC,CCS2,50.0,Independent / CPO
+OCM-IN-107,OPEN_CHARGE_MAP,Relux Electric Charging Station Gachibowli,Telangana,Hyderabad,17.441,78.352,Fast DC,CCS2,60.0,Independent / CPO
+OCM-IN-108,OPEN_CHARGE_MAP,Magenta ChargeGrid Whitefield,Karnataka,Bengaluru,12.9698,77.75,Level 2,Type 2,7.4,Independent / CPO
+STN-MYS-001,SYNTHETIC_MYSORE,Mysore Palace Visitor Parking P2P,Karnataka,Mysore,12.3051,76.6552,Level 2,Type 2,7.4,Independent / P2P
+STN-MYS-002,SYNTHETIC_MYSORE,Chamundi Hills Viewpoint P2P,Karnataka,Mysore,12.2725,76.6727,Level 2,Type 2,11.0,Independent / P2P
+STN-MYS-003,SYNTHETIC_MYSORE,KRS Dam Visitor Center,Karnataka,Mysore,12.4258,76.5749,Fast DC,CCS2,50.0,Public Authority
+STN-MYS-004,SYNTHETIC_MYSORE,Infosys Mysore Campus Gate,Karnataka,Mysore,12.3118,76.6394,Level 2,Type 2,7.4,Private Corporate
+STN-MYS-005,SYNTHETIC_MYSORE,Mall of Mysore Underground,Karnataka,Mysore,12.3060,76.6394,Level 2,Type 2,11.0,Commercial Mall
+STN-MYS-006,SYNTHETIC_MYSORE,Railway Station P2P,Karnataka,Mysore,12.3077,76.6512,Level 2,Type 2,7.4,Independent / P2P
+STN-MYS-007,SYNTHETIC_MYSORE,Brindavan Gardens Parking,Karnataka,Mysore,12.4244,76.5714,Level 2,Type 2,11.0,Public Authority
+STN-MYS-008,SYNTHETIC_MYSORE,Gokulam Residential Society,Karnataka,Mysore,12.3134,76.6231,Level 2,Type 2,7.4,Independent / P2P
+STN-MYS-009,SYNTHETIC_MYSORE,University of Mysore Campus,Karnataka,Mysore,12.3117,76.6394,Level 2,Type 2,7.4,Educational Institution
+STN-MYS-010,SYNTHETIC_MYSORE,Devaraja Market P2P,Karnataka,Mysore,12.3073,76.6561,Level 2,Type 2,7.4,Independent / P2P
+STN-MYS-011,SYNTHETIC_MYSORE,Mysore Zoo Visitor Parking,Karnataka,Mysore,12.3015,76.6648,Level 2,Type 2,11.0,Public Authority
+STN-MYS-012,SYNTHETIC_MYSORE,Jayalakshmipuram Premium Residential,Karnataka,Mysore,12.3214,76.6211,Level 2,Type 2,7.4,Independent / P2P
+STN-MYS-013,SYNTHETIC_MYSORE,Highway Service Plaza,Karnataka,Mysore,12.4150,76.6850,Fast DC,CCS2,60.0,Commercial Highway
+STN-MYS-014,SYNTHETIC_MYSORE,Hunsur Road Suburban,Karnataka,Mysore,12.3336,76.5893,Level 2,Type 2,7.4,Independent / P2P
+STN-MYS-015,SYNTHETIC_MYSORE,Kukkarahalli Lake Jogging Track,Karnataka,Mysore,12.3173,76.6273,Level 2,Type 2,11.0,Public Authority
+STN-MYS-016,SYNTHETIC_MYSORE,Lingambudhi Lake CFTRI,Karnataka,Mysore,12.2887,76.6489,Level 2,Type 2,7.4,Research Institution

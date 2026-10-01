@@ -1,0 +1,6 @@
+state,discom,consumer_category,base_tariff_inr_kwh,fixed_charge_inr_kw_month,tod_peak_surcharge_percent,peak_hours,off_peak_hours,source,effective_date
+Uttar Pradesh,NPCL/PVVNL,Public/P2P EV Charging,7.70,0.00,15,17:00-22:00,23:00-06:00,UPERC Tariff Order / CEA,2024-04-01
+Delhi,BSES Rajdhani/Tata Power DDL,EV Charging (LT/HT),6.00,0.00,20,16:00-21:00,22:00-06:00,DERC Tariff Order / CEA,2024-04-01
+Karnataka,BESCOM,Electric Vehicle Charging,6.50,50.00,15,18:00-22:00,22:00-06:00,KERC Tariff Order / CEA,2024-04-01
+Maharashtra,MSEDCL/Tata Power Mumbai,EV Charging Station,7.20,75.00,20,18:00-22:00,22:00-06:00,MERC Tariff Order / CEA,2024-04-01
+Telangana,TSSPDCL,Electric Vehicle Charging,6.00,0.00,15,18:00-22:00,22:00-06:00,TSERC Tariff Order / CEA,2024-04-01

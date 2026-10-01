@@ -1,0 +1,127 @@
+{
+  "model_artifact": "xgboost_demand_v1.json",
+  "benchmark_classification": "SYNTHETIC_BENCHMARK",
+  "splits": {
+    "train": {
+      "rows": 61320,
+      "date_range": [
+        "2024-01-02 00:00:00",
+        "2024-09-13 11:00:00"
+      ],
+      "mae": 0.0306,
+      "rmse": 0.0385,
+      "r2": 0.9791,
+      "raw_mae": 0.0306,
+      "raw_rmse": 0.0385,
+      "raw_r2": 0.9791
+    },
+    "validation": {
+      "rows": 13140,
+      "date_range": [
+        "2024-09-13 12:00:00",
+        "2024-11-07 05:00:00"
+      ],
+      "mae": 0.0427,
+      "rmse": 0.0527,
+      "r2": 0.96,
+      "raw_mae": 0.0427,
+      "raw_rmse": 0.0527,
+      "raw_r2": 0.96
+    },
+    "test": {
+      "rows": 13140,
+      "date_range": [
+        "2024-11-07 06:00:00",
+        "2024-12-31 23:00:00"
+      ],
+      "mae": 0.0413,
+      "rmse": 0.0512,
+      "r2": 0.9616,
+      "raw_mae": 0.0413,
+      "raw_rmse": 0.0512,
+      "raw_r2": 0.9616
+    }
+  },
+  "baselines": {
+    "24h_persistence": {
+      "mae": 0.0711,
+      "rmse": 0.1105,
+      "r2": 0.8211
+    },
+    "train_mean": {
+      "mean_value": 0.5253,
+      "mae": 0.2382,
+      "rmse": 0.2722,
+      "r2": -0.0845
+    }
+  },
+  "per_charger_test": {
+    "CHG-BLR-005": {
+      "rows": 1314,
+      "mae": 0.0416,
+      "rmse": 0.0515,
+      "r2": 0.9592
+    },
+    "CHG-BLR-006": {
+      "rows": 1314,
+      "mae": 0.0434,
+      "rmse": 0.0537,
+      "r2": 0.9555
+    },
+    "CHG-DEL-003": {
+      "rows": 1314,
+      "mae": 0.0419,
+      "rmse": 0.0524,
+      "r2": 0.961
+    },
+    "CHG-DEL-004": {
+      "rows": 1314,
+      "mae": 0.0413,
+      "rmse": 0.0511,
+      "r2": 0.9601
+    },
+    "CHG-HYD-010": {
+      "rows": 1314,
+      "mae": 0.0418,
+      "rmse": 0.0516,
+      "r2": 0.9635
+    },
+    "CHG-MUM-007": {
+      "rows": 1314,
+      "mae": 0.0443,
+      "rmse": 0.0543,
+      "r2": 0.9587
+    },
+    "CHG-MUM-008": {
+      "rows": 1314,
+      "mae": 0.0417,
+      "rmse": 0.0513,
+      "r2": 0.9595
+    },
+    "CHG-NCR-001": {
+      "rows": 1314,
+      "mae": 0.0378,
+      "rmse": 0.0471,
+      "r2": 0.9659
+    },
+    "CHG-NCR-002": {
+      "rows": 1314,
+      "mae": 0.0398,
+      "rmse": 0.0492,
+      "r2": 0.9666
+    },
+    "CHG-PUN-009": {
+      "rows": 1314,
+      "mae": 0.0396,
+      "rmse": 0.0495,
+      "r2": 0.9634
+    }
+  },
+  "residual_diagnostics": {
+    "mean_error": 0.02388,
+    "std_dev": 0.0453,
+    "skewness": -0.0875,
+    "min_error": -0.1552,
+    "max_error": 0.2066
+  }
+}
