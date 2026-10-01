@@ -1,4 +1,4 @@
-# ⚡ EVsathi (ईवी साथी) — Peer-to-Peer EV Charging Marketplace & AI Demand Forecasting
+# ⚡ EVsathi — Peer-to-Peer EV Charging Marketplace & AI Demand Forecasting
 
 [![React](https://img.shields.io/badge/React-v18.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-v5.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
