@@ -1,4 +1,4 @@
-# ⚡ EVsathi - Peer-to-Peer EV Charging Marketplace & AI Demand Forecasting
+# ⚡ EVsathi (ईवी साथी) — Peer-to-Peer EV Charging Marketplace & AI Demand Forecasting
 
 [![React](https://img.shields.io/badge/React-v18.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-v5.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -46,8 +46,7 @@ The platform couples a high-throughput **Node.js/Express** transactional backend
 - [Environment Variables](#-environment-variables)
 - [API Reference](#-api-reference)
 - [Automated Testing Suite](#-automated-testing-suite)
-- [Roadmap & Verification History](#-roadmap--verification-history)
-- [License & Academic Credits](#-license--academic-credits)
+- [License & Credits](#-license--credits)
 
 ---
 
@@ -125,21 +124,23 @@ flowchart TB
     end
 
     subgraph DataStore ["Database & External Services"]
-        MongoAtlas[("MongoDB Atlas Database")]
+        MongoAtlas[(MongoDB Atlas Database)]
         RazorpayGateway["Payment Gateway (Mock / Razorpay)"]
         OSRMService["OSRM Routing Engine"]
     end
 
     UI -->|REST / JSON| Router
     DemandCard -->|Demand Requests| Router
-    ChatUI <-->|WebSockets (ws://)| SocketServer
+    ChatUI -->|WebSockets| SocketServer
+    SocketServer -->|Push Notifications| ChatUI
     Router --> AuthGuard
     AuthGuard --> BookingEngine
     BookingEngine --> MongoAtlas
     PricingEngine -->|Internal HTTP| MLClient
     MLClient -->|POST /predict-demand| FastAPI
-    FastAPI --> FeatureEngine --> XGBoost
-    FeatureEngine <--> LagCache
+    FastAPI --> FeatureEngine
+    FeatureEngine --> XGBoost
+    FeatureEngine --- LagCache
     ExpiryService -->|Status Transitions| MongoAtlas
     Router --> RazorpayGateway
     Map --> OSRMService
@@ -241,10 +242,6 @@ EVsathi/
 │   ├── data/                             # Calibrated Synthetic Datasets & Splits
 │   ├── tests/                            # Pytest Suites (48 Tests)
 │   └── requirements.txt                  # Python Dependencies
-│
-├── docs/                                 # Architectural Documentation & Reports
-│   ├── API.md                            # Comprehensive API Specification
-│   └── PROJECT_CONTEXT.md                # System Architecture & Phase History
 └── README.md                             # Main Repository Documentation
 ```
 
@@ -261,8 +258,8 @@ EVsathi/
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/EVsathi.git
-cd EVsathi
+git clone https://github.com/thejazz04/EVsathi_public.git
+cd EVsathi_public
 ```
 
 ---
@@ -421,39 +418,27 @@ All REST endpoints are prefixed with `/api/v1` (or `/api` for backward compatibi
 EVsathi enforces continuous testing across the full stack:
 
 ```bash
-# 1. Run all Node.js backend integration & unit tests (19 tests)
+# 1. Run Node.js backend integration & unit tests
 npm test --prefix server
 
 # 2. Run dedicated ML pricing integration tests
 npm test --prefix server -- tests/pricing_ml_integration.test.js
 
-# 3. Run Python ML microservice pytest suite (48 tests)
+# 3. Run Python ML microservice test suite
 pytest model/tests/ -v
 
-# 4. Run dataset integrity checks (18 validation rules)
+# 4. Run dataset validation checks
 python model/scripts/validate_dataset.py
 
-# 5. Verify production frontend build (Vite compilation)
+# 5. Verify production frontend build
 npm run build --prefix client
 ```
 
 ---
 
-## 📈 Roadmap & Verification History
+## 📜 License & Credits
 
-- [x] **Phase 1–2**: India EV market research, 87,600-row calibrated dataset generation.
-- [x] **Phase 3–4**: XGBoost demand model training ($R^2 \approx 0.962$) & FastAPI microservice.
-- [x] **Phase 5–6**: Node.js resilient client, zero-fabrication diagnostics, and error propagation.
-- [x] **Phase 7–8**: Domain-shift compatibility audit, authoritative 22-feature schema contract.
-- [x] **Phase 9**: XGBoost demand prediction live production integration.
-- [x] **UI Polish**: Driver Dashboard density refinement, 24h interactive demand curves, and real-time Socket.IO notification center.
-- [ ] **Phase 10**: Demand-Aware Dynamic Pricing Engine (Host-configurable surge elasticity & ToD tariff co-optimization).
-- [ ] **Future Work**: PPO Reinforcement Learning for closed-loop dynamic tariff optimization upon collecting real production traces.
-
----
-
-## 📜 License & Academic Credits
-
-Distributed under the **ISC License**. Developed as an Advanced Major Engineering Project for the **EVsathi Peer-to-Peer EV Charger Sharing and Demand Prediction Platform**.
+Distributed under the **ISC License**. Developed for the **EVsathi Peer-to-Peer EV Charger Sharing and Demand Prediction Platform**.
 
 Made with ⚡ for a sustainable, electrified India.
+
